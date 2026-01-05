@@ -64,3 +64,21 @@ console.log(a.getAttribute("href"));
 let link = 'https://google.com';
 a.setAttribute("href", link);
 console.log(a.getAttribute("href"));
+
+let elemento = document.querySelector("#paragrafo-principal");
+// considera as bordas
+console.log('Largura: ' + elemento.offsetWidth); 
+console.log('Altura: ' + elemento.offsetHeight);
+// não considera as bordas
+console.log('Largura: ' + elemento.clientWidth); 
+console.log('Altura: ' +  elemento.clientHeight);
+
+console.log(elemento.getBoundingClientRect());
+
+let elemento1 = document.querySelector("#paragrafo-principal");
+elemento1.style.color = 'red';
+
+let todosP = document.querySelectorAll(".teste");
+todosP[2].style.color = 'blue';
+console.log(todosP[2].style.color);
+console.log(todosP);
