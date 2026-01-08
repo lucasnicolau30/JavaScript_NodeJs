@@ -6,5 +6,5 @@ const server = createServer((req, res) => {
     res.end();
 });
 
-server.listen(8000);
-console.log("Servidor rodando na porta 8000");
+server.listen(9000);
+console.log("Servidor rodando na porta 9000");
